@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Exeternas</title>
+
+    <!-- Usando fontes externas baixadas. Pesquisando as fontes do site dafont.com-->
+
+    
+    <style>
+@font-face {
+    font-family: 'Love';
+    src: url('fonts/love story.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedde-opentype
+        - truetype-aat (Apple Advanced Typography)
+        -svg
+    */
+}
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h1{
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eveniet libero laborum commodi aliquam. Cum fugiat rem natus, quo odit dignissimos ea nihil esse dolor ullam voluptates tempora. Libero, non!</p>
+    
+</body>
+</html>
