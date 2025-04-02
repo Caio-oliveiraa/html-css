@@ -31,8 +31,8 @@ header{
 
 header > h1{
     padding-top: 50px;
-    font-variant: small-caps;
-    font-size: 10vw;
+    font-variant: small-caps; /*Deixa todas as letrar em maiúsculas */
+    font-size: 10vw; /*Faz com que as letras se adaptem ao tamanho de tela*/
     font-family: var(--fonte2);
     
 }
@@ -54,11 +54,16 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 2em; /*Espaçamento entre linhas */
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3.5vw; /*Faz com que as letras se adaptem ao tamanho de tela*/
 }
+    
+section > p{
+    padding-bottom: 2em;
+}
+
 
 section.normal{
     background-color: white;
@@ -68,12 +73,31 @@ section.normal{
 section.imagem{
     background-color: rgb(59, 59, 59);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.247);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    
+    
+    
 }
 
 
